@@ -2,7 +2,7 @@
 import "source-map-support/register";
 import * as cdk from "aws-cdk-lib";
 import { AuthStack } from "../lib/AuthStack";
-import { FileStorageStack } from "../lib/fileStorageStack";
+import { FileStorageStack } from "../lib/FileStorageStack";
 import { DatabaseStack } from "../lib/DatabaseStack";
 import { IdentityStack } from "../lib/IdentityStack";
 import { APIStack } from "../lib/APIStack";
@@ -42,7 +42,7 @@ const amplifyHostingStack = new AmplifyHostingStack(
     // swap for your github username
     owner: "jimmy90s",
     // swap for your github frontend repo
-    repository: "frontend-fullstack",
+    repository: "cdk-saas",
     //pass in any envVars from the above stacks here
     environmentVariables: {
       USERPOOL_ID: authStack.userpool.userPoolId,
